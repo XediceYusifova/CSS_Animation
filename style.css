@@ -1,0 +1,218 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+}
+#umumi{
+    background-color: violet;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+#umumi div{
+    position: absolute;
+}
+#umumi div{
+    background-color: blueviolet;
+    font: 400 35px/20px Arial;
+    text-align: center;
+    padding: 30px;
+}
+#bir,#iki,#uc,#dord,#bes,#alti,#yeddi{
+    text-shadow: 1px 1px 3px darkorchid;
+    color: #fff;
+}
+#bir{
+    top: 50px;
+    left: 30%;
+    width: 500px;
+}
+#iki,#uc{
+    top: 160px;
+    width: 200px;
+
+}
+#iki{
+    left: 170px;
+}
+#uc{
+    left: 950px;
+}
+#dord,#bes{
+    line-height: 35px;
+    top: 290px;
+}
+#dord{
+    left: 10px;
+    width: 271px;
+}
+#bes{
+    left: 1040px;
+    width: 222px;
+}
+#esas{
+    top: 250px;
+    left: 570px;
+    color: #fff;
+    transform: scale(1,1);
+    text-shadow: 1px 1px 3px;
+    animation: esas 1.5s ease .5 forwards;
+}
+#alti,#yeddi{
+    top: 440px;
+    width: 200px;
+}
+#alti{
+    left: 300px;
+}
+#yeddi{
+    left: 850px;
+}
+@keyframes esas{
+    from{
+        transform: scale(1,1);
+        color: #fff;
+        text-shadow: none;
+    }
+    to{
+        transform: scale(2,2);
+        color: gold;
+        text-shadow: 1px 1px 3px darkred;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+#umumi div{
+        font: 300 30px/20px Arial;
+        padding: 20px;
+    }
+    #bir,#dord,#bes{
+        line-height: 25px !important;
+    }
+    #bir{
+        left: 30%;
+        width: 450px;
+    }
+    #iki,#uc,#dord,#bes,#alti,#yeddi{
+        width: 180px;
+    }
+    #iki{
+        left: 11%;
+    }
+    #uc{
+        left: 74%;
+    }
+    #dord{
+        left: 4%;
+    }
+    #bes{
+        left: 81%;
+    }
+    #esas{
+        left: 42%;
+        width: 180px;
+    }
+    #alti{
+        left: 22%;
+    }
+    #yeddi{
+        left: 62%;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    #bir{
+        left: 29%;
+        width: 400px;
+    }
+    #iki{
+        width: 160px;
+        left: 9%;
+    }
+    #uc,#dord,#bes,#esas,#alti,#yeddi{
+        width: 150px;
+    }
+    #uc{
+        left: 75%;
+    }
+    #dord{
+        left: 4%;
+    }
+    #bes{
+        left: 80%;
+    }
+    #esas{
+        left: 43%;
+    }
+    #alti{
+        left: 20%;
+    }
+    #yeddi{
+        left: 65%;
+    }
+}
+@media only screen and (max-width: 768px){
+    #umumi div{
+        font: 200 25px/19px Arial;
+    }
+    #bir{
+        left: 27%;
+        width: 300px;
+    }
+    #iki,#uc,#dord,#bes,#esas{
+        width: 120px;
+    }
+    #iki{
+        left: 8%;
+    }
+    #uc{
+        left: 75%;
+    }
+    #dord{
+        left: 5%;
+    }
+    #bes{
+        left: 78%;
+    }
+    #esas{
+        left: 40%;
+    }
+    #alti,#yeddi{
+        width: 100px;
+    }
+    #alti{
+        left: 25%;
+    }
+    #yeddi{
+        left: 60%;
+    }
+}
+@media only screen and (max-width: 576px){
+    #umumi div{
+        font: 100 20px/18px Arial;
+    }
+    #bir{
+        left: 21%;
+        width: 300px;
+    }
+    #iki{
+        width: 120px;
+        left: 5%;
+    }
+    #uc,#dord,#bes{
+        width: 100px;
+    }
+    #dord{
+        left: 2%;
+    }
+    #alti{
+        left: 18%;
+    }
+    #yeddi{
+        left: 67%;
+    }
+}
